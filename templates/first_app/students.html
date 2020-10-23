@@ -27,7 +27,7 @@
                 <td> 
                     <a type="button" class="btn btn-primary" href="{% url 'first_app:student_info' student_id=student.id %}" >View</a>
                     <a type="button" class="btn btn-success" href="{% url 'first_app:info_edit' student_id=student.id %}" >Edit</a>
-                    <a type="button" class="btn btn-danger" >Delete</a>
+                    <a type="button" class="btn btn-danger" href="{% url 'first_app:delete' student_id=student.id%}" >Delete</a>
                 
                 </td>
             </tr>

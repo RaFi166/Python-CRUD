@@ -41,3 +41,7 @@ def info_edit(request,student_id):
             student_form.save(commit=True)
             
     return render (request,"first_app/info_edit.html",context=diction)
+
+def delete(request,student_id):
+    student_delete=StudentForm.objects.get(pk=student_id).delete()
+    return render(request,"first_app/delete.html")
