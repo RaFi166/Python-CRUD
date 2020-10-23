@@ -1,0 +1,12 @@
+{% extends 'first_app/base.html' %}
+
+{% block home_content %}
+<div class="container-fluid">
+<form action="" method="POST">
+    {% csrf_token %}
+    {{student.as_p}}
+    <input type="submit" value="SUBMIT">
+
+</form>
+</div>
+{% endblock %}

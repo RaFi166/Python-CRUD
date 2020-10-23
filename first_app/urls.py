@@ -7,5 +7,8 @@ app_name='first_app'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name="home"),
-    path('student_form', views.student_form, name="student_form"),
+    path('student', views.student, name="student"),
+    path('student_info/<int:student_id>',views.student_info, name="student_info"),
+    path('info_edit/<int:student_id>/', views.info_edit, name="info_edit"),
+  
 ]

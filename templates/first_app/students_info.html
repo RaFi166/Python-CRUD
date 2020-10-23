@@ -1,0 +1,25 @@
+{% extends 'first_app/base.html' %}
+
+{% block home_content %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone No</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope="row">{{student_info.id}}</td>
+            <td>{{student_info.first_name}}</td>
+            <td>{{student_info.last_name}}</td>
+            <td>{{student_info.email}}</td>
+            <td>{{student_info.phone}}</td>
+        </tr>
+       
+    </tbody>
+</table>
+{% endblock home_content %}
